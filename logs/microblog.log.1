@@ -1,0 +1,108 @@
+2018-07-29 13:38:56,474 ERROR: Exception on /reset_password_request [POST] [in C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\TBW\Documents\footy_site\app\routes.py", line 163, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Users\TBW\Documents\footy_site\app\email.py", line 26, in send_password_reset_email
+    user=user, token=token))
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: email/reset_password.html
+2018-07-29 13:39:29,972 INFO: Microblog startup [in C:\Users\TBW\Documents\footy_site\app\__init__.py:51]
+2018-07-29 13:39:55,769 ERROR: Exception on /reset_password_request [POST] [in C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\TBW\Documents\footy_site\app\routes.py", line 163, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Users\TBW\Documents\footy_site\app\email.py", line 26, in send_password_reset_email
+    user=user, token=token))
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\jinja2\loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: email/reset_password.html
+2018-07-29 13:44:14,359 INFO: Microblog startup [in C:\Users\TBW\Documents\footy_site\app\__init__.py:51]
+2018-07-29 13:44:22,907 ERROR: Exception on /reset_password_request [POST] [in C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\TBW\Documents\footy_site\app\routes.py", line 163, in reset_password_request
+    send_password_reset_email(user)
+  File "C:\Users\TBW\Documents\footy_site\app\email.py", line 26, in send_password_reset_email
+    user=user, token=token))
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\TBW\Documents\footy_site\app\templates\reset_password.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\TBW\Documents\footy_site\app\templates\base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\TBW\Documents\footy_site\app\templates\reset_password.html", line 6, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Users\TBW\Anaconda3\envs\footy\lib\site-packages\jinja2\environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2018-07-29 13:46:46,872 INFO: Microblog startup [in C:\Users\TBW\Documents\footy_site\app\__init__.py:51]
